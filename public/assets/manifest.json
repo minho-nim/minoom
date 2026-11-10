@@ -1,0 +1,67 @@
+[
+  {
+    "path": "assets/materials/fabric/color.jpg",
+    "bytes": 370054,
+    "sha256": "e85176c01696087b0180c32f0e42e0d6720aa428e82c764ec6e3263c4335d6d5"
+  },
+  {
+    "path": "assets/materials/fabric/normal.jpg",
+    "bytes": 569800,
+    "sha256": "d77eeb0fac9c6ef410c09834fabf4a58c73a9c5fbd399ae513102f7f26b403a1"
+  },
+  {
+    "path": "assets/materials/fabric/roughness.jpg",
+    "bytes": 401193,
+    "sha256": "bf86cc9cafbe65da6d003adbfd00f6fdec62af03ac9dd21d60fd1f103006f613"
+  },
+  {
+    "path": "assets/materials/tile/color.jpg",
+    "bytes": 56690,
+    "sha256": "266f12e0233fdd66990d59b84403614b4b45b2ee6e88c7a2607b7e834e43a083"
+  },
+  {
+    "path": "assets/materials/tile/normal.jpg",
+    "bytes": 76805,
+    "sha256": "096e8347209e280bce2d1d90b48ad50a1b7914a137cb394bc19793f9bd6ab87a"
+  },
+  {
+    "path": "assets/materials/tile/roughness.jpg",
+    "bytes": 65366,
+    "sha256": "b2b2bec85facfe0bdf1dfe7d434b51bc65b39edae497c0096830a9b33748cbc9"
+  },
+  {
+    "path": "assets/materials/wood/color.jpg",
+    "bytes": 168658,
+    "sha256": "317797ed491994b5e4a630c2272853d27c35c5ad4845306515c82c88913457e2"
+  },
+  {
+    "path": "assets/materials/wood/normal.jpg",
+    "bytes": 14113,
+    "sha256": "ffa3d5b2ef5ff5426a7e8781fd787060c84c9f3886ef091957ff80bccaa97a4a"
+  },
+  {
+    "path": "assets/materials/wood/roughness.jpg",
+    "bytes": 79156,
+    "sha256": "84d211390058fc14bd2ee0c2fb58aebfbab433a0ca36b4b8a3cf4977e45380f4"
+  },
+  {
+    "path": "assets/models/modern_arm_chair_01.glb",
+    "bytes": 874720,
+    "sha256": "288c2cc6aaa6109a80544af9270054e58382581612f1ebe49ab73608c5f4ba9c"
+  },
+  {
+    "path": "assets/models/modern_coffee_table_01.glb",
+    "bytes": 444360,
+    "sha256": "0af8cca99bd02fa5615deb4ddb8d4f4acafe1c05718af2ae42a9203e17e92031"
+  },
+  {
+    "path": "assets/previews/chair.jpg",
+    "bytes": 9544,
+    "sha256": "b6ea61a2fa2ba4ddfdaaf1ef7fa7dd38a6c0d2fe2f1a02899eea8329cfa82a7e"
+  },
+  {
+    "path": "assets/previews/table.jpg",
+    "bytes": 4998,
+    "sha256": "59dc8a0633f66c2638fc80903301883b7f564be219232a1cf9d3a6a3c9ace84c"
+  }
+]
