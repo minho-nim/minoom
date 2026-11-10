@@ -1,6 +1,6 @@
-# minoom
+# minoom미눔
 
-미눔 · 3D 온라인 투룸 하우스 v0.1
+3D 온라인 투룸 하우스 v0.1
 
 독립 신규 프로젝트. 기존 프로젝트/저장소를 수정하거나 배포하지 않았습니다. 유료 API와 유료 3D 에셋을 사용하지 않습니다. 승인된 무료 CC0 에셋을 포함합니다. React 19, TypeScript, Vite, Three.js, React Three Fiber, drei, Zustand, Supabase로 구성했습니다.
 
