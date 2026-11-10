@@ -1,6 +1,6 @@
 import {describe,it,expect} from 'vitest';
 import {LookDrag} from '../src/controls';
-describe('PC·터치 드래그 시야 입력',()=>{
+describe('터치·대체 드래그 시야 입력',()=>{
  it('누르기 전 hover와 놓은 후 이동은 시야를 바꾸지 않는다',()=>{
   const drag=new LookDrag();expect(drag.move(1,50,50)).toEqual([0,0]);drag.start(1,50,50);expect(drag.move(1,62,45)).toEqual([12,-5]);drag.end(1);expect(drag.move(1,90,60)).toEqual([0,0]);expect(drag.active).toBe(false);
  });
