@@ -1,3 +1,4 @@
+import {publicAssetPath} from './assetPaths';
 import {createClient,type RealtimeChannel} from '@supabase/supabase-js';
 import type {HomeData} from './domain';
 const env=(import.meta as unknown as {env:Record<string,string>}).env;
@@ -12,4 +13,4 @@ export class HomeConnection {
  close(){if(this.channel)supabase?.removeChannel(this.channel);this.channel=null;this.peer=null;this.onPeer(null)}
 }
 export const connection=new HomeConnection();
-export async function assetUrl(path:string){if(!path.startsWith('storage:'))return path;const {data,error}=await supabase!.storage.from('furniture').createSignedUrl(path.slice(8),3600);if(error)throw error;return data.signedUrl;}
+export async function assetUrl(path:string){if(!path.startsWith('storage:'))return publicAssetPath(path);const {data,error}=await supabase!.storage.from('furniture').createSignedUrl(path.slice(8),3600);if(error)throw error;return data.signedUrl;}
