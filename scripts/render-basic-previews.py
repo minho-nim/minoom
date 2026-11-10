@@ -9,7 +9,7 @@ def box(p,s,m):
  bpy.ops.mesh.primitive_cube_add(size=1,location=(p[0],-p[2],p[1]));o=bpy.context.object;o.dimensions=(s[0],s[2],s[1]);bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);o.data.materials.append(m);bevel=o.modifiers.new('Soft edges','BEVEL');bevel.width=min(.025,min(s)*.22);bevel.segments=3;o.modifiers.new('Normals','WEIGHTED_NORMAL')
 def cylinder(p,r1,r2,h,m):
  bpy.ops.mesh.primitive_cone_add(vertices=32,radius1=r1,radius2=r2,depth=h,location=(p[0],-p[2],p[1]));bpy.context.object.data.materials.append(m)
-for kind in range(9):
+for kind in range(2,9):
  bpy.ops.wm.read_factory_settings(use_empty=True);wood=material((.51,.32,.17));cream=material((.76,.72,.63));white=material((.92,.89,.8));green=material((.38,.48,.28));metal=material((.25,.25,.21))
  if kind==0:
   w,d=2.5,.95;box((0,.25,0),(w,.32,d),cream);box((0,.62,-d/2+.12),(w,.5,.2),cream)

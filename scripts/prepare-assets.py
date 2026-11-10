@@ -3,7 +3,7 @@ Requires Python Pillow. Run manually, never on page load. Downloads are cached i
 """
 import json,urllib.request,hashlib,struct,io,zipfile,concurrent.futures
 from pathlib import Path
-from PIL import Image
+from PIL import Image,ImageOps
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'public/assets';CACHE=Path('/tmp/minoom-approved-assets');CACHE.mkdir(exist_ok=True)
 def fetch(url):
  p=CACHE/hashlib.sha256(url.encode()).hexdigest()
@@ -36,6 +36,8 @@ def surface(pair):
 with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
  tasks=[pool.submit(model,a) for a in ['modern_coffee_table_01','modern_arm_chair_01']]+[pool.submit(surface,p) for p in [('WoodFloor050','wood'),('Fabric030','fabric'),('Tiles107','tile')]]
  for task in tasks:task.result()
+linen=OUT/'materials/linen';linen.mkdir(exist_ok=True)
+im=Image.open(OUT/'materials/fabric/color.jpg').convert('L').point(lambda x:round(226+(x-128)*.19));ImageOps.colorize(im,black='#d7cfc0',white='#fffdf5').save(linen/'color.jpg',quality=88,optimize=True)
 manifest=[]
 for p in sorted(OUT.rglob('*')):
  if p.is_file() and p.name!='manifest.json':manifest.append({'path':str(p.relative_to(ROOT/'public')),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})

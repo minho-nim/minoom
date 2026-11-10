@@ -23,7 +23,7 @@ describe('사진과 모델 연결 및 기존 집 보존',()=>{
 describe('배포 에셋 무결성',()=>{
  const manifest=JSON.parse(readFileSync('public/assets/manifest.json','utf8')) as {path:string;bytes:number;sha256:string}[];
  it('다운로드한 모든 파일이 기록된 크기·해시와 일치한다',()=>{for(const entry of manifest){const bytes=readFileSync('public/'+entry.path);expect(bytes.length).toBe(entry.bytes);expect(createHash('sha256').update(bytes).digest('hex')).toBe(entry.sha256)}});
- for(const name of ['modern_coffee_table_01','modern_arm_chair_01'])it(`${name}: 외부 파일 요청 없는 GLB다`,()=>{
+ for(const name of ['modern_coffee_table_01','modern_arm_chair_01','minoom-sofa','minoom-bed'])it(`${name}: 외부 파일 요청 없는 GLB다`,()=>{
   const b=readFileSync(`public/assets/models/${name}.glb`);expect(b.toString('utf8',0,4)).toBe('glTF');expect(b.readUInt32LE(4)).toBe(2);expect(b.readUInt32LE(8)).toBe(b.length);
   const n=b.readUInt32LE(12),g=JSON.parse(b.toString('utf8',20,20+n));expect(g.buffers).toHaveLength(1);expect(g.buffers[0].uri).toBeUndefined();expect(g.images.length).toBeGreaterThan(0);
   for(const image of g.images){expect(image.uri).toBeUndefined();expect(image.mimeType).toBe('image/jpeg');expect(g.bufferViews[image.bufferView].byteLength).toBeGreaterThan(0)}
