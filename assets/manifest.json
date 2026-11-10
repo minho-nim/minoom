@@ -25,6 +25,11 @@
     "sha256": "bf86cc9cafbe65da6d003adbfd00f6fdec62af03ac9dd21d60fd1f103006f613"
   },
   {
+    "path": "assets/materials/linen/color.jpg",
+    "bytes": 25515,
+    "sha256": "45f7976f8b4fbc2695e4579a6eb06cbdf34eb709094758b68671545b2b092c47"
+  },
+  {
     "path": "assets/materials/tile/color.jpg",
     "bytes": 56690,
     "sha256": "266f12e0233fdd66990d59b84403614b4b45b2ee6e88c7a2607b7e834e43a083"
@@ -55,6 +60,16 @@
     "sha256": "84d211390058fc14bd2ee0c2fb58aebfbab433a0ca36b4b8a3cf4977e45380f4"
   },
   {
+    "path": "assets/models/minoom-bed.glb",
+    "bytes": 288032,
+    "sha256": "9c394d1dafe5ba7f7b7a3726fb452c68e211d7498d1abc76871e621bd52bcf1c"
+  },
+  {
+    "path": "assets/models/minoom-sofa.glb",
+    "bytes": 248612,
+    "sha256": "27ca21aacdebe48e6f60b102f992dfe53b21e2fca149ba36a468259194434c95"
+  },
+  {
     "path": "assets/models/modern_arm_chair_01.glb",
     "bytes": 874720,
     "sha256": "288c2cc6aaa6109a80544af9270054e58382581612f1ebe49ab73608c5f4ba9c"
@@ -66,13 +81,13 @@
   },
   {
     "path": "assets/previews/basic-0.jpg",
-    "bytes": 5404,
-    "sha256": "5c3b47a4390c9af19346a952248d5ea2e9d6793516c2c8bd6a5d42da7bd51232"
+    "bytes": 6728,
+    "sha256": "b9bead18cd1e8ffddc13e976612d1a1b99d78a2c0fe0e7eecb84e20ab122e99a"
   },
   {
     "path": "assets/previews/basic-1.jpg",
-    "bytes": 6901,
-    "sha256": "34a507fc861ec02467f63056fb4a300fda7f0102c6c97c100af4d4b4b3704c68"
+    "bytes": 10892,
+    "sha256": "355b0fc8ccce78f25730b7fca0d61e040764265f9c6dc96881ea552f28955a34"
   },
   {
     "path": "assets/previews/basic-2.jpg",
